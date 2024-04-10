@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Questão 1</h1>
+  <p>Insira os valores de n e k para calcular C(n,k):</p>
+  <input type="number" id="nInput" placeholder="n">
+  <input type="number" id="kInput" placeholder="k">
+  <button onclick="calcularCombinação()">Calcular</button>
+  <p id="resultado"></p>
+
+  <h1>Questão 2</h1>
+  <input type="text" id="messageField" value=""><br>
+  <button onclick="startScroll()">Iniciar</button>
+  <button onclick="stopScroll()">Parar</button>
+
+  <h1>Questão 3</h1>
+  <label for="originalTextarea">Texto Original:</label><br>
+  <textarea id="originalTextarea" rows="4" cols="50"></textarea><br><br>
+  <button onclick="inverterTexto()">Inverter</button><br><br>
+  <label for="invertedTextarea">Texto Invertido:</label><br>
+  <textarea id="invertedTextarea" rows="4" cols="50" readonly></textarea>
+
+   <h1>Questão 4</h1>
+    <div class="calc">
+      <div class="scroll">
+        <div id="display" class="display">0</div>
+      </div>
+      <div class="calc-botoes">
+        <button id="porc">%</button>
+        <button id="limparCalculo">CE</button>
+        <button id="limparTudo">C</button>
+        <button id="apagar" class="BtnsSinais">«</button>
+        <button id="divisaoUm">1/x</button>
+        <button id="potencia">x²</button>
+        <button id="raiz">2√x</button>
+        <button id="sinaldividir" class="BtnsSinais">÷</button>
+        <button id="num7" class="botoes-numericos bgWhite">7</button>
+        <button id="num8" class="botoes-numericos bgWhite">8</button>
+        <button id="num9" class="botoes-numericos bgWhite">9</button>
+        <button id="sinalmultiplica" class="BtnsSinais">x</button>
+        <button id="num4" class="botoes-numericos bgWhite">4</button>
+        <button id="num5" class="botoes-numericos bgWhite">5</button>
+        <button id="num6" class="botoes-numericos bgWhite">6</button>
+        <button id="sinalsubtrair" class="BtnsSinais">-</button>
+        <button id="num1" class="botoes-numericos bgWhite">1</button>
+        <button id="num2" class="botoes-numericos bgWhite">2</button>
+        <button id="num3" class="botoes-numericos bgWhite">3</button>
+        <button id="sinalsomar" class="BtnsSinais">+</button>
+        <button id="maismenos" class="bgWhite">±</button>
+        <button id="num0" class="botoes-numericos bgWhite">0</button>
+        <button id="virg" class="bgWhite">,</button>
+        <button id="igual" class="btnIgual">=</button>
+      </div>
+    </div>
+
+  <h1>Questão 5 a)</h1>
+      <input type="text" id="dateInput" placeholder="Insira a data ( dd/mm/aaaa)">
+      <button onclick="countDays()">Calcular</button>
+      <div id="result"></div>
+
+
+    <h1>Questão 5 b)</h1>
+    <p>A cor é: <span id="bgColor"></span></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
